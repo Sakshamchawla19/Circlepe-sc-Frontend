@@ -1,11 +1,11 @@
 Here’s a basic `README.md` file to guide users on how to set up and host your website locally:
 
 ```markdown
-# CirclePe-Frontend-Assignment
+**CirclePe-Frontend-Assignment**
 
 This repository contains the frontend code for the CirclePe project, created by Saksham Chawla from Galgotias University.
 
-## Table of Contents
+** Table of Contents**
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -14,14 +14,14 @@ This repository contains the frontend code for the CirclePe project, created by 
 - [Deployment](#deployment)
 - [License](#license)
 
-## Prerequisites
+**Prerequisites**
 
 Make sure you have the following installed on your local machine:
 
 - [Node.js](https://nodejs.org/) (v14 or later)
 - [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-## Installation
+**Installation**
 
 1. **Clone the repository:**
 
