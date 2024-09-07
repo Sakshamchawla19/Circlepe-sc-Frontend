@@ -1,0 +1,29 @@
+.container {
+    /* height: 100%; */
+    position: relative;
+}
+
+.circle {
+    height: 700px;
+    width: 700px;
+    background-image: radial-gradient(farthest-side at 50% 45%, rgba(59, 149, 255, 0.17), rgba(28, 106, 197, 0));
+    position: absolute;
+    overflow: hidden;
+    /* border-radius: 50%; */
+}
+
+@media (max-width:480px) {
+}
+
+@media (min-width:481px) and (max-width:767px){
+
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}

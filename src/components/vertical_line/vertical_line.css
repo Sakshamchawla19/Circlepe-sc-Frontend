@@ -1,0 +1,142 @@
+/* Base style for the range input */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 20%;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 270px;
+    right: 70px;
+    height: 2px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    padding: 0;
+    margin: 10px 0;
+    --value: 0%;
+    --color-start: rgba(107, 175, 255, 1); /* Initial color (blue) */
+    --color-end: #46e04c; /* End color (green) */
+    transition: background 1s ease-in-out;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+}
+
+/* Style the track with a dynamic gradient */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        to right, 
+        var(--color-start) 0%, 
+        var(--color-start) 20%, /* Blue up to 20% */
+        #7EC8E3 20%, /* Transition from blue to light blue at 20% */
+        #7EC8E3 40%, /* Light blue up to 40% */
+        #B0E57C 40%, /* Transition from light blue to yellow-green at 40% */
+        #B0E57C 60%, /* Yellow-green up to 60% */
+        #8BCC3E 60%, /* Transition from yellow-green to green at 60% */
+        #8BCC3E 80%, /* Green up to 80% */
+        var(--color-end) 80%, /* Final green color at 80% */
+        var(--color-end) 100% /* End green color at 100% */
+    );
+    border-radius: 5px;
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: var(--color-start); /* Initially blue */
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+}
+
+/* Firefox styles */
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--color-start);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: var(--color-start);
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* Edge and IE styles */
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+    background: var(--color-start);
+    border-radius: 5px;
+}
+
+input[type="range"]::-ms-fill-upper {
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--color-start);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width:480px) {
+    input[type="range"]{
+      transform: rotate(0deg);
+      top:20px;
+      left: 50px;
+      width: 70%;
+    }
+}
+
+@media (min-width:481px) and (max-width:767px){
+    input[type="range"]{
+        transform: rotate(0deg);
+        top:20px;
+        left: 14%;
+        width: 70%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    input[type="range"]{
+        top: 40%;
+        left: 50%;
+        width: 60%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    input[type="range"]{
+        right: 1%;
+    }
+}

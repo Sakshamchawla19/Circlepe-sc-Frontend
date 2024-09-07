@@ -1,0 +1,53 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+
+.lava-lamp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px; /* Increased width for more space */
+  height: 150px; /* Increased height for more space */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent; /* No background needed */
+}
+
+.cube {
+  width: 20px;
+  height: 20px;
+  background: #ff5733;
+  border-radius: 5px;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.cube1 {
+  width: 30px; /* Larger size */
+  height: 30px; /* Larger size */
+  background: #33ff57;
+  border-radius: 5px;
+  animation: bounce 1.5s ease-in-out 0.3s infinite;
+}
+
+.cube2 {
+  width: 40px; /* Larger size */
+  height: 40px; /* Larger size */
+  background: #3357ff;
+  border-radius: 5px;
+  animation: bounce 1.5s ease-in-out 0.6s infinite;
+}
+
+.cube3 {
+  width: 50px; /* Largest size */
+  height: 50px; /* Largest size */
+  background: #ff33a1;
+  border-radius: 5px;
+  animation: bounce 1.5s ease-in-out 0.9s infinite;
+}
